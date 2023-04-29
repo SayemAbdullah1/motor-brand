@@ -5,12 +5,12 @@ import Slider from "./components/Home/Slider"
 function App() {
 
   return (
-    <>
+    <div className="bg-gray-200">
       <NavBar/>
       <Slider></Slider>
       <Offers></Offers>
       <Gallery></Gallery>
-    </>
+    </div>
   )
 }
 

@@ -30,7 +30,21 @@ const Gallery = () => {
         { src: photos10, width: 400, height: 300 },
     ];
 
-    return <PhotoAlbum layout="rows" photos={photos} />;
+    return (
+        <div>
+            <div className='grid grid-cols-10 my-12 mx-6'>
+                <div className='col-span-1'>
+                    <h2 className='text-3xl font-bold'>Gallery</h2>
+                </div>
+                <div className='border-b-2 border-green-600 col-span-9 mb-2'>
+                    <p></p>
+
+                </div>
+            </div>
+            <PhotoAlbum layout="rows" photos={photos} />;
+        </div>
+    )
+    
     
 };
 
