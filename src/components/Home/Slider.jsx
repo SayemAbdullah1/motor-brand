@@ -27,7 +27,7 @@ const Slider = () => {
                         <div className='col-span-1'>
                             <h2 className='text-5xl lg:mt-24 text-white flex justify-content-center align-item-center'>Let the good times role!</h2>
                         </div>
-                        <div className='col-span-2'>
+                        <div className='col-span-2 lg:d-block'>
                             <Swiper
                                 slidesPerView={4}
                                 centeredSlides={true}
@@ -39,7 +39,7 @@ const Slider = () => {
                                 modules={[Pagination]}
                                 className="mySwiper"
                             >
-                                <SwiperSlide>
+                                <SwiperSlide >
                                     <img src={one} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
