@@ -38,13 +38,14 @@ const Offers = () => {
 
                 </div>
             </div>
-            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-6 mx-6 my-22'>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-6 mx-6 my-22 ' data-aos="fade-up"
+                data-aos-duration="3000">
 
             {
                 ProductOffers.map(NewOffer => <>
 
                     <div className="card bg-base-100 shadow-xl rounded-none">
-                        <figure><img src={NewOffer.image} alt="vivhicles" className='h-[400px] border-b-4 border-green-600' /></figure>
+                        <figure><img src={NewOffer.image} alt="vivhicles" className='h-[400px] border-b-4 border-green-600 ' /></figure>
                         <div className="card-body">
                             <h2 className="card-title">
                                 {NewOffer.title}

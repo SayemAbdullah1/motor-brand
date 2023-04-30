@@ -2,7 +2,7 @@ import video from './../../assets/video/1.mp4'
 const VideoSec = () => {
     return (
         <div className="my-12 mx-6  rounded-md bg-purple-100 border-green-700 border-4 flex justify-between ">
-            <div className="flex py-12 mx-auto my-auto align-center justify-center">
+            <div className=" sm:flex-col lg:flex py-12 mx-auto my-auto align-center justify-center">
             <div>
                 <p>
                     <span className="text-xl">SHOP THE</span><br />
@@ -18,7 +18,7 @@ const VideoSec = () => {
                 </div> */}
            </div>
 
-            <div className='lg:w-[800px]'>
+            <div className='lg:w-[800px] sm:w-full'>
                 <video src={video} loop autoPlay muted></video>
             </div>
         </div>
