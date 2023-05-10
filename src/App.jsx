@@ -1,3 +1,4 @@
+import Footer from "./components/Home/Footer"
 import Gallery from "./components/Home/Gallery"
 import NavBar from "./components/Home/NavBar"
 import Offers from "./components/Home/Offers"
@@ -16,6 +17,7 @@ AOS.init()
       <VideoSec></VideoSec>
       <Products></Products>
       <Gallery></Gallery>
+      <Footer></Footer>
     </div>
   )
 }

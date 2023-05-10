@@ -25,11 +25,11 @@ const Slider = () => {
                 <div className="border-b-4 mb-1 border-green-600 ">
                     <div className=' border-b-3 pb-1 border-green-600'>
                         <div className='grid grid-cols-3 gap-4  border-b-2 p-4 border-green-600'>
-                            <div className='col-span-1'>
+                            <div className='lg:col-span-1 col-span-3'>
                                 <h2 className='text-5xl lg:mt-24 text-white flex justify-content-center align-item-center'>Let the good times role!</h2>
                                 <button className="px-12 mt-4 text-white bg-green-500 py-4 hover:bg-green-900">Learn more</button>
                             </div>
-                            <div className='col-span-2 lg:d-block'>
+                            <div className='col-span-2 hidden lg:block object-contain'>
                                 <Swiper
                                     slidesPerView={4}
                                     centeredSlides={true}
@@ -71,8 +71,8 @@ const Slider = () => {
                 </div>
             </div>
             <div className="mx-auto w-0 h-0 
-                lg:border-l-[1200px] border-l-[150px] border-l-transparent
-                border-t-[75px] border-t-green-500
+                lg:border-l-[1200px] border-l-[300px] border-l-transparent
+                lg:border-t-[75px] border-t-[45px] border-t-green-500
                 border-r-[50px] border-r-transparent">
             </div>
 

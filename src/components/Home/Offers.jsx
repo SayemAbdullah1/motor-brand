@@ -1,6 +1,7 @@
 import offer1 from './../../assets/album/offer/1.jpeg'
 import offer2 from './../../assets/album/offer/2.png'
 import offer3 from './../../assets/album/offer/3.jpeg'
+import { IoMdArrowDropright } from 'react-icons/io';
 
 
 const Offers = () => {
@@ -28,7 +29,7 @@ const Offers = () => {
         },
     ]
     return (
-        <div className='my-24'>
+        <div className='my-12 lg:my-24'>
             <div className='grid grid-cols-5 my-12 mx-6'>
                 <div className='col-span-1'>
                     <h2 className='lg:text-3xl font-bold sm:text-xl'>Offers & Promotions</h2>
@@ -56,6 +57,7 @@ const Offers = () => {
                             
                         </div>
                     </div>
+                    
 
                     {/* <img src={NewOffer.image} alt="" className='h-[400px] border-b-4 border-green-600'/>
                     <h2>{NewOffer.title}</h2>
@@ -70,6 +72,13 @@ const Offers = () => {
                     )
                 }
         </div>
+            <div className='my-12  flex justify-center text-gray-500 font-bold' data-aos="fade-up"
+                data-aos-duration="3000">
+                <div>
+                    <button className='px-12 py-4 text-center bg-white border-green-500 border-2 flex justify-center align-middle'><p>See all</p> <p className='mt-1 ms-4 text-green-700 fw-[14px]'><IoMdArrowDropright /></p></button>
+                    
+                </div>
+            </div>
         </div>
     );
 };
